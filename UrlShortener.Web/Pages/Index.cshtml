@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container gx-10">
+    <h4>
+        A fast and simple URL shortener
+    </h4>
+    <p>
+        Free URL Shortener for transforming long, ugly links into nice, memorable and trackable short URLs.
+        Use it to shorten links for any social media platforms, blogs, SMS, emails, ads, or pretty much
+        anywhere else you want to share them. Twitter, Facebook, YouTube, Instagram, WhatsApp, emails, SMS, videos.
+    </p>
+
+    <form method="post">
+        <div class="input-group mb-3">
+            <input type="url" name="url" class="form-control" placeholder="Example: https://www.vg.no/" aria-label="URL" aria-describedby="button-submit">
+            <button class="btn btn-outline-secondary" type="submit" id="button-submit">Submit</button>
+        </div>
+    </form>
+</div>

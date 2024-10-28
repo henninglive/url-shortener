@@ -1,0 +1,13 @@
+@page "{id?}"
+@model UrlShortener.Web.Pages.Details
+@{
+    ViewData["Title"] = "Details " + @Model.Id;
+}
+
+<div class="container gx-10">
+    <b>ID: </b><span>@Model.Id</span>
+    <br />
+    <b>Short link: </b><a href="/@Model.Id">@Model.Id</a>
+    <br />
+    <b>Full Link: </b><a href="@Model.RouteUrl">@Model.RouteUrl</a>
+</div>
